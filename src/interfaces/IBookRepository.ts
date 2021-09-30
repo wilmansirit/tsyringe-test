@@ -1,12 +1,11 @@
+import IBook from "./IBook";
+
 export default interface IBookRepository {
-  books: Array<Books>;
+  books: Array<IBook>;
 
-  getBook(): Books[];
+  getBook(): IBook[];
 
-  getBookById(id: number): Books;
+  getBookById(id: number): IBook;
 }
 
-interface Books {
-  id: number;
-  name: string;
-}
+
